@@ -1,9 +1,9 @@
 <template>
   <div class="d-flex flex-column min-vh-100">
     <HeaderView></HeaderView>
-    <FormView class="d-none"></FormView>
-    <ServicesView class="d-none"></ServicesView>
-    <AboutView class="d-none"></AboutView>
+    <FormView></FormView>
+    <ServicesView></ServicesView>
+    <AboutView></AboutView>
     <LocationView></LocationView>
     <FooterView class="mt-auto"></FooterView>
   </div>
