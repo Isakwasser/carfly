@@ -3,7 +3,8 @@
     <HeaderView></HeaderView>
     <FormView class="d-none"></FormView>
     <ServicesView class="d-none"></ServicesView>
-    <AboutView></AboutView>
+    <AboutView class="d-none"></AboutView>
+    <LocationView></LocationView>
     <FooterView class="mt-auto"></FooterView>
   </div>
 </template>
@@ -14,8 +15,9 @@ import FooterView from './views/FooterView.vue';
 import FormView from './views/FormView.vue';
 import ServicesView from './views/ServicesView.vue';
 import AboutView from './views/AboutView.vue';
+import LocationView from './views/LocationView.vue';
 export default {
     name: "App",
-    components: { HeaderView, FooterView, FormView, ServicesView, AboutView }
+    components: { HeaderView, FooterView, FormView, ServicesView, AboutView, LocationView }
 }
 </script>
