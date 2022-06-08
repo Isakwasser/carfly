@@ -1,0 +1,8 @@
+@import 'common';
+.Footer {
+    background-color: $green;
+    &__line {
+        height: 2px;
+        background: $gray;
+    }
+}

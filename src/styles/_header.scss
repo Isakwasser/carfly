@@ -1,0 +1,8 @@
+@import 'common';
+.Header {
+    &__postline {
+        height: 3px;
+        background: $green;
+        opacity: 0.2;
+    }
+}
