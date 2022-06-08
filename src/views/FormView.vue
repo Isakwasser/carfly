@@ -1,47 +1,49 @@
 <template>
     <div class="Form py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Парковка в&nbsp;Пулково с&nbsp;трансфером в&nbsp;аэропорт</h2>
+        <div class="container pt-4">
+            <div class="row pb-5 mb-3">
+                <div class="col-md-7 pe-0">
+                    <h2 class="pb-5 mb-4">Парковка в&nbsp;Пулково с&nbsp;трансфером в&nbsp;аэропорт</h2>
                     <div class="Form__mini d-flex">
-                        <div class="py-3 pe-3">
+                        <div class="py-4 pe-4">
                             <div class="Form__duration">1-2 дня</div>
-                            <div class="Form__price">350 руюлей</div>
+                            <div class="Form__price">350 рублей</div>
                         </div>
-                        <div class="py-3 px-3">
+                        <div class="py-4 px-4">
                             <div class="Form__duration">3-7 дней</div>
-                            <div class="Form__price">250 руюлей</div>
+                            <div class="Form__price">250 рублей</div>
                         </div>
-                        <div class="py-3 ps-3">
+                        <div class="py-4 ps-4">
                             <div class="Form__duration">7-14 дней</div>
-                            <div class="Form__price">200 руюлей</div>
+                            <div class="Form__price">200 рублей</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="../assets/form_img.svg" alt="" class="img-fluid">
+                <div class="col-md-5 d-flex flex-column p-0">
+                    <img src="../assets/form_img.svg" alt="" class="img-fluid mt-auto Form__usersImage">
                 </div>
             </div>
-            <form action="#" class="d-md-flex">
-                <div>
+            <form action="#" @submit="submit" class="row">
+                <div class="col-md-4">
                     <label for="inDate">Дата и время въезда (вылет - 3 часа)</label>
                     <div class="input">
-                        <input type="date">
-                        <input type="date">
+                        <input required type="date" placeholder="ДД/ММ/ГГ" v-model="startDate">
+                        <input required type="time" v-model="startTime">
+                        <div class="dividerBlock"></div>
                     </div>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <label for="outDate">Дата и время выезда (прилет + 1 час)</label>
                     <div class="input">
-                        <input type="date">
-                        <input type="date">
+                        <input required type="date" placeholder="ДД/ММ/ГГ" v-model="endDate">
+                        <input required type="time" v-model="endTime">
+                        <div class="dividerBlock"></div>
                     </div>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <label for="s">&nbsp;</label>
-                    <div class="input">
-                        <button class="btn btn-success w-100">Найти место</button>
+                    <div class="">
+                        <button class="Form__success w-100">Найти место</button>
                     </div>
                 </div>
             </form>

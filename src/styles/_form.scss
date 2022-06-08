@@ -2,6 +2,102 @@
 .Form {
     background-image: url('../assets/Form_bg.jpg');
     background-position: 67% 2%;
-    background-size: 150%;
+    background-size: cover;
     background-repeat: no-repeat;
+    &__duration {
+        // font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: $green;
+    }
+    &__price {
+        // font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 36px;
+        color: $dark;
+    }
+    &__mini {
+        >div+div {
+            border-left: 2px solid rgba(181, 192, 217, 0.2);
+        }
+    }
+    &__usersImage {
+        transform: scale(1.3) translateX(-10%);
+    }
+    form>div {
+        flex-grow: 1;
+    }
+    label {
+        // font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $graydark;
+        margin-bottom: 11px;
+    }
+    &__success {
+        background: $green;
+        border-radius: 4px;
+        // font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        height: 60px;
+    }
+    form .input {
+        height: 60px;
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #B5C0D9;
+        border-radius: 4px;
+        position: relative;
+        &:hover {
+            border-color: #788195;
+        }
+        >input {
+            height: 100%;
+            width: 50%;
+            border: none;
+            text-align: left;
+            color: #788195;
+            background-color: transparent;
+            &::placeholder {
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: #B5C0D9;
+            }
+            &::-webkit-datetime-edit {
+                order: 1;
+            }
+            &::-webkit-calendar-picker-indicator {
+                color: $green;
+                background-image: url('../assets/calendar.svg');
+                margin-left: 30px;
+                margin-right: 16px;
+            }
+        }
+        .dividerBlock {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            width: 1px;
+            height: 70%;
+            background: #B5C0D9;
+            opacity: 0.5;
+        }
+    }
 }
