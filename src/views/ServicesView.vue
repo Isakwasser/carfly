@@ -1,5 +1,5 @@
 <template>
-    <div class="Services position-relative pb-5">
+    <div class="Services position-relative pb-5" id="services">
         <div class="container py-5 position-relative" style="z-index: 1">
             <h2 class="text-center my-5">Услуги</h2>
             <div class="Services__tabs text-center mb-5 pb-5">

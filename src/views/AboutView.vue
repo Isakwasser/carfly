@@ -1,5 +1,5 @@
 <template>
-    <div class="About position-relative pb-5">
+    <div class="About position-relative pb-5" id="about">
         <div class="container py-5">
             <h2 class="text-center my-5">О парковке</h2>
             <div class="row g-4 mb-5">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="About__photos row g-4">
+            <div class="About__photos row g-4" id="camera">
                 <div class="col-md-6">
                     <img src="../assets/about_online.svg" class="img-fluid" alt="">
                 </div>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="col-12 mt-5">
                     <button @click="show=!show" :class="{'showed': show}" class="About__showMore mx-auto d-block">
-                        {{show ? 'Скрыть фото':'Еще фото'}} 
+                        {{show ? 'Скрыть фото':'Еще фото'}}
                         <img src="../assets/about_arrow.svg" class="img-fluid" alt="">
                     </button>
                 </div>

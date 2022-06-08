@@ -6,7 +6,7 @@
                     <a href="#services" class="mx-4">Услуги</a>
                     <a href="#about" class="mx-4">О парковке</a>
                     <a href="#location" class="mx-4">Где мы?</a>
-                    <a href="#" class="mx-4">Камеры</a>
+                    <a href="#camera" class="mx-4">Камеры</a>
                 </div>
                 <div
                     class="col-12 col-lg-5 d-flex flex-column flex-md-row justify-content-around align-items-center Header__contacts">

@@ -1,5 +1,5 @@
 <template>
-    <div class="Location position-relative pb-5">
+    <div class="Location position-relative pb-5" id="location">
         <div class="container pt-5">
             <div class="row pt-5">
                 <div class="col-md-5">
