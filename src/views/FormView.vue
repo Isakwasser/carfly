@@ -1,8 +1,8 @@
 <template>
     <div class="Form py-5">
-        <div class="container pt-4">
+        <div class="container pt-4 pb-5">
             <div class="row pb-5 mb-3">
-                <div class="col-md-7 pe-0">
+                <div class="col-md-6 pe-0">
                     <h2 class="pb-5 mb-4">Парковка в&nbsp;Пулково с&nbsp;трансфером в&nbsp;аэропорт</h2>
                     <div class="Form__mini d-flex">
                         <div class="py-4 pe-4">
@@ -19,11 +19,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 d-flex flex-column p-0">
+                <div class="col-md-6 d-flex flex-column p-0">
                     <img src="../assets/form_img.svg" alt="" class="img-fluid mt-auto Form__usersImage">
                 </div>
             </div>
-            <form action="#" @submit="submit" class="row">
+            <form action="#" @submit="submit" class="row pb-4">
                 <div class="col-md-4">
                     <label for="inDate">Дата и время въезда (вылет - 3 часа)</label>
                     <div class="input">
