@@ -1,0 +1,73 @@
+@import 'common';
+.About {
+    &__item {
+        background: $light;
+        border-radius: 6px;
+        min-height: 280px;
+        height: 100%;
+        .item {
+            &__title {
+                // font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 36px;
+                color: $green;
+            }
+            &__description {
+                // font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                color: $graydark;
+            }
+        }
+        &_action {
+            background: $green;
+            border-radius: 6px;
+            .item__title {
+                // font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 36px;
+                color: #FFFFFF;
+            }
+            button {
+                /* #FFFFFF */
+                background: #FFFFFF;
+                border-radius: 4px;
+                color: $green;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                border: none;
+            }
+        }
+    }
+    &__showMore {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 18px 40px;
+        background-color: transparent;
+        border: 2px solid $green;
+        border-radius: 4px;
+        // font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: $green;
+        &.showed {
+            img {
+                transform: scaleY(-1);
+            }
+        }
+    }
+}

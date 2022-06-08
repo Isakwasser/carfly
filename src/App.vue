@@ -2,7 +2,8 @@
   <div class="d-flex flex-column min-vh-100">
     <HeaderView></HeaderView>
     <FormView class="d-none"></FormView>
-    <ServicesView></ServicesView>
+    <ServicesView class="d-none"></ServicesView>
+    <AboutView></AboutView>
     <FooterView class="mt-auto"></FooterView>
   </div>
 </template>
@@ -12,8 +13,9 @@ import HeaderView from './views/HeaderView.vue';
 import FooterView from './views/FooterView.vue';
 import FormView from './views/FormView.vue';
 import ServicesView from './views/ServicesView.vue';
+import AboutView from './views/AboutView.vue';
 export default {
     name: "App",
-    components: { HeaderView, FooterView, FormView, ServicesView }
+    components: { HeaderView, FooterView, FormView, ServicesView, AboutView }
 }
 </script>
