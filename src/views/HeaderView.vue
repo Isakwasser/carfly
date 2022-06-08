@@ -2,15 +2,17 @@
     <div class="Header">
         <div class="container py-5">
             <div class="row text-center">
-                <div class="col-12 col-md-8 d-md-flex justify-content-center align-items-center">
-                    <div class="mx-4">Услуги</div>
-                    <div class="mx-4">О парковке</div>
-                    <div class="mx-4"> Где мы?</div>
-                    <div class="mx-4">Камеры</div>
+                <div class="col-12 col-lg-7 d-flex flex-column flex-md-row justify-content-center align-items-center Header__links">
+                    <a href="#services" class="mx-4">Услуги</a>
+                    <a href="#about" class="mx-4">О парковке</a>
+                    <a href="#location" class="mx-4">Где мы?</a>
+                    <a href="#" class="mx-4">Камеры</a>
                 </div>
-                <div class="col-12 col-md-4 d-md-flex flex-column flex-lg-row justify-content-around align-items-center">
-                    <div class="logo logo_whatsapp">+7 (921) 000-00-00</div>
-                    <div>8 (800) 555-35-35</div>
+                <div
+                    class="col-12 col-lg-5 d-flex flex-column flex-md-row justify-content-around align-items-center Header__contacts">
+                    <a href="https://wa.me/79210000000" target="_blank" class="d-flex align-items-center">
+                        <img src="../assets/WhatsApp_green.svg" class="img-fluid me-2" alt="">+7 (921) 000-00-00</a>
+                    <a href="tel:88005553535">8 (800) 555-35-35</a>
                 </div>
             </div>
         </div>
