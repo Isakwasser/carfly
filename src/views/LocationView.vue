@@ -26,7 +26,7 @@
                                 Тел. 8 (800) 555-35-35</a>
                         </div>
                     </div>
-                    <a href="#" class="Location__action">Найти в Навигаторе</a>
+                    <a href="#" class="Location__action text-button">Найти в Навигаторе</a>
                 </div>
                 <div class="col-md-7">
                     <div class="h-100 w-100 Location__map text-button">
