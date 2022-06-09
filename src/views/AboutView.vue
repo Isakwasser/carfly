@@ -3,37 +3,37 @@
         <div class="container py-5">
             <h2 class="text-center my-5">О парковке</h2>
             <div class="row g-4 mb-5">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="About__item p-5 d-flex flex-column">
-                        <div class="item__title">500</div>
-                        <div class="item__description">машиномест</div>
+                        <div class="item__title extra32">500</div>
+                        <div class="item__description semi24-32">машиномест</div>
                         <div class="item__img mt-auto text-end">
                             <img src="../assets/about_car.svg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="About__item p-5 d-flex flex-column">
-                        <div class="item__title">Вежливый</div>
-                        <div class="item__description">персонал</div>
+                        <div class="item__title extra32">Вежливый</div>
+                        <div class="item__description semi24-32">персонал</div>
                         <div class="item__img mt-auto text-end">
                             <img src="../assets/about_users.svg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="About__item p-5 d-flex flex-column">
-                        <div class="item__title">Ответственность</div>
-                        <div class="item__description">застрахована в страховой компании</div>
+                        <div class="item__title extra32">Ответственность</div>
+                        <div class="item__description semi24-32">застрахована в страховой компании</div>
                         <div class="item__img mt-auto text-end">
                             <img src="../assets/about_lock.svg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="About__item p-5 d-flex flex-column">
-                        <div class="item__title">Безопасность</div>
-                        <div class="item__description">на объекте обеспечивается Федеральной службой
+                        <div class="item__title extra32">Безопасность</div>
+                        <div class="item__description semi24-32">на объекте обеспечивается Федеральной службой
                             войск национальнойгвардии России
                         </div>
                         <div class="item__img mt-auto text-end">
@@ -41,19 +41,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="About__item p-5 d-flex flex-column">
-                        <div class="item__title">Более 20</div>
-                        <div class="item__description">камер и периметральная охранная сигнализация</div>
+                        <div class="item__title extra32">Более 20</div>
+                        <div class="item__description semi24-32">камер и периметральная охранная сигнализация</div>
                         <div class="item__img mt-auto text-end">
                             <img src="../assets/about_webcam.svg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="About__item About__item_action p-5 d-flex flex-column">
-                        <div class="item__title">Забронируйте место на парковке</div>
-                        <button class="mt-auto py-3">ЗАБРОНИРОВАТЬ</button>
+                        <div class="item__title extra32 pb-3 pt-md-5">Забронируйте место на парковке</div>
+                        <button class="mt-auto py-3 text-button">ЗАБРОНИРОВАТЬ</button>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="col-12 mt-5">
-                    <button @click="show=!show" :class="{'showed': show}" class="About__showMore mx-auto d-block">
+                    <button @click="show=!show" :class="{'showed': show}" class="About__showMore mx-auto d-block text-button">
                         {{show ? 'Скрыть фото':'Еще фото'}}
                         <img src="../assets/about_arrow.svg" class="img-fluid" alt="">
                     </button>

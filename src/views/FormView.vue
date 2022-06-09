@@ -3,7 +3,7 @@
         <div class="container pt-4 pb-5">
             <div class="row pb-5 mb-3">
                 <div class="col-md-6 pe-0">
-                    <h2 class="pb-5 mb-4">Парковка в&nbsp;Пулково с&nbsp;трансфером в&nbsp;аэропорт</h2>
+                    <h2 class="pb-md-5 mb-4">Парковка в&nbsp;Пулково с&nbsp;трансфером в&nbsp;аэропорт</h2>
                     <div class="Form__mini d-flex">
                         <div class="py-4 pe-4">
                             <div class="Form__duration semi24-32">1-2 дня</div>
