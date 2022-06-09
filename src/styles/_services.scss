@@ -2,11 +2,8 @@
 .Services {
     background-color: $light;
     &__tabtitle {
-        // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 800;
-        font-size: 32px;
-        line-height: 36px;
         color: $graydark;
         white-space: nowrap;
         position: relative;
@@ -28,11 +25,8 @@
         transform: translateY(10px);
     }
     &__li {
-        // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 32px;
         color: $graydark;
         display: flex;
         &::before {

@@ -2,7 +2,7 @@
     <div class="Services position-relative pb-5" id="services">
         <div class="container py-5 position-relative" style="z-index: 1">
             <h2 class="text-center my-5">Услуги</h2>
-            <div class="Services__tabs text-center mb-5 pb-5">
+            <div class="Services__tabs text-center mb-md-5 pb-5 extra32">
                 <button v-for="(el,i) in tabs" :key="i" class="mx-3 Services__tabtitle border-0 bg-transparent" :class="{ 'active': i==active}"
                     @click="active = i">{{el.title}}</button>
             </div>
@@ -10,7 +10,7 @@
                 <div class="col-md-7">
                     <img :src="itemImage" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-5 Services__ul">
+                <div class="col-md-5 Services__ul semi24-32">
                     <div class="Services__li" v-for="(el,i) in tabs[active].text" :key="i">{{el}}</div>
                 </div>
             </div>
