@@ -1,8 +1,8 @@
 <template>
-    <div class="Footer pt-2">
+    <div class="Footer pt-lg-2">
         <div class="container pb-1">
-            <div class="d-flex py-5">
-                <div class="ms-auto d-flex">
+            <div class="d-flex py-md-5 py-4">
+                <div class="ms-auto d-flex semi24-32">
                     <a href="https://wa.me/79210000000" target="_blank"
                         class="Footer__contact d-flex align-items-center">
                         <img src="../assets/WhatsApp_light.svg" class="img-fluid me-3" alt="">
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="Footer__line"></div>
-            <div class="d-flex justify-content-between py-3 Footer__bottom">
+            <div class="d-flex justify-content-between py-2 py-sm-3 Footer__bottom">
                 <div>© Carfly 2020</div>
                 <a href="https://yandex.ru/images/search?from=tabbar&text=заглушка" target="_blank">Политика
                     конфидициальности</a>
