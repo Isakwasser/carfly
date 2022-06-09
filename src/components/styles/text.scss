@@ -5,6 +5,14 @@ h2 {
     font-size: 62px;
     line-height: 74px;
     color: #191919;
+    @media (max-width: 991px) {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    @media (max-width: 575px) {
+        font-size: 26px;
+        line-height: 30px;
+    }
 }
 
 @font-face {
@@ -15,4 +23,17 @@ h2 {
 html,
 body {
     font-family: 'Proxima Nova';
+}
+
+.semi24-32 {
+    font-size: 24px;
+    line-height: 32px;
+    @media (max-width: 991px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    @media (max-width: 575px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
