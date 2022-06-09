@@ -26,11 +26,14 @@
                                 Тел. 8 (800) 555-35-35</a>
                         </div>
                     </div>
-                    <a href="#" class="Location__action text-button">Найти в Навигаторе</a>
+                    <a href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.222044%2C55.587018&mode=search&sll=37.217050%2C55.588047&source=serp_navig&text=55.588047%2C37.217050&z=16"
+                        class="Location__action text-button">Найти в Навигаторе</a>
                 </div>
                 <div class="col-md-7">
                     <div class="h-100 w-100 Location__map text-button">
-
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae1c29bd101038a7f70c06f3b40aa129c95a5de2fe0aa96fe39a7ef35918b3ed4&amp;source=constructor"
+                            width="100%" height="100%" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>

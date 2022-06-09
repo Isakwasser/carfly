@@ -1,9 +1,15 @@
 @import 'common';
+@import '../components/styles/animation.scss';
 .Form {
     background-image: url('../assets/Form_bg.jpg');
     background-position: 67% 2%;
     background-size: cover;
     background-repeat: no-repeat;
+    animation: animation_show 2s linear forwards;
+    h2 {
+        opacity: 0;
+        animation: animation_show 2s linear 1s forwards;
+    }
     &__duration {
         font-style: normal;
         font-weight: 600;
@@ -15,17 +21,23 @@
         color: $dark;
     }
     &__mini {
+        opacity: 0;
+        animation: animation_show 2s linear 1s forwards;
         >div+div {
             border-left: 2px solid rgba(181, 192, 217, 0.2);
         }
     }
     &__usersImage {
+        opacity: 0;
+        animation: animation_show 2s linear 2s forwards;
         @media (min-width: 991px) {
             transform: scale(1.3) translateX(-10%);
         }
     }
     form>div {
         flex-grow: 1;
+        opacity: 0;
+        animation: animation_show 2s linear 1s forwards;
     }
     label {
         // font-family: 'Proxima Nova';
