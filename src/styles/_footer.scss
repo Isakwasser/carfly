@@ -1,6 +1,9 @@
 @import 'common';
 .Footer {
     background-color: $green;
+    background-image: url('../assets/flies.svg');
+    background-size: contain;
+    background-position: center;
     &__line {
         height: 2px;
         background: $gray;
