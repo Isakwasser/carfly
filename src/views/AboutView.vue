@@ -57,73 +57,79 @@
                     </div>
                 </div>
             </div>
-            <div class="About__photos row g-4" id="camera">
+            <div class="About__photos row g-4" id="camera" @click="About_click">
                 <div class="col-md-6">
                     <img src="../assets/about_online.svg" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-6">
                     <div class="row g-4">
                         <div class="col-6">
-                            <img src="../assets/about_img_1.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_1.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6">
-                            <img src="../assets/about_img_2.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_2.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6">
-                            <img src="../assets/about_img_3.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_3.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6">
-                            <img src="../assets/about_img_4.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_4.jpg" alt="" class="img-fluid showDetail">
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="../assets/about_img_5.jpg" alt="" class="img-fluid">
+                    <img src="../assets/about_img_5.jpg" alt="" class="img-fluid showDetail">
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="../assets/about_img_6.jpg" alt="" class="img-fluid">
+                    <img src="../assets/about_img_6.jpg" alt="" class="img-fluid showDetail">
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="../assets/about_img_7.jpg" alt="" class="img-fluid">
+                    <img src="../assets/about_img_7.jpg" alt="" class="img-fluid showDetail">
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="../assets/about_img_8.jpg" alt="" class="img-fluid">
+                    <img src="../assets/about_img_8.jpg" alt="" class="img-fluid showDetail">
                 </div>
                 <div class="col-12" v-show="show">
                     <div class="row g-4">
                         <div class="col-6 col-md-3">
-                            <img src="../assets/about_img_6.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_6.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6 col-md-3">
-                            <img src="../assets/about_img_7.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_7.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6 col-md-3">
-                            <img src="../assets/about_img_5.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_5.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6 col-md-3">
-                            <img src="../assets/about_img_8.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_8.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6 col-md-3">
-                            <img src="../assets/about_img_5.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_5.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6 col-md-3">
-                            <img src="../assets/about_img_8.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_8.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6 col-md-3">
-                            <img src="../assets/about_img_7.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_7.jpg" alt="" class="img-fluid showDetail">
                         </div>
                         <div class="col-6 col-md-3">
-                            <img src="../assets/about_img_6.jpg" alt="" class="img-fluid">
+                            <img src="../assets/about_img_6.jpg" alt="" class="img-fluid showDetail">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 mt-5">
-                    <button @click="show=!show" :class="{'showed': show}" class="About__showMore mx-auto d-block text-button">
+                    <button @click="show=!show" :class="{'showed': show}"
+                        class="About__showMore mx-auto d-block text-button">
                         {{show ? 'Скрыть фото':'Еще фото'}}
                         <img src="../assets/about_arrow.svg" class="img-fluid" alt="">
                     </button>
                 </div>
             </div>
+        </div>
+        <div v-if="showDetailPhoto" @click="showDetailPhoto = false"
+            class="hideDetail d-flex align-items-center justify-content-center text-center top-0 start-0 vw-100 vh-100 fixed-top p-5">
+            <div class="bg w-100 h-100 position-absolute top-0 start-0"></div>
+            <img :src="detailPhotoSrc" alt="" class="position-relative w-50">
         </div>
     </div>
 </template>
