@@ -7,16 +7,21 @@
         color: $graydark;
         white-space: nowrap;
         position: relative;
+        transition: all $transition;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: transparent;
+            transition: all $transition;
+        }
         &.active {
             color: $green;
             &::after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                height: 4px;
                 background-color: $green;
             }
         }
@@ -43,5 +48,8 @@
         &+.Services__li {
             margin-top: 20px;
         }
+    }
+    &__info {
+        min-height: 390px;
     }
 }
