@@ -47,6 +47,11 @@
         text-align: center;
         color: #579D45;
         text-decoration: none;
+        transition: all $transition;
+        &:hover {
+            color: #ffffff;
+            background: $green;
+        }
     }
     &__map {
         background-image: url('../assets/map.jpg');

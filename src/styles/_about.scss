@@ -64,6 +64,14 @@
         line-height: 20px;
         text-align: center;
         color: $green;
+        transition: all $transition;
+        &:hover {
+            color: #ffffff;
+            background: $green;
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
         &.showed {
             img {
                 transform: scaleY(-1);
