@@ -1,35 +1,23 @@
 @import 'common';
 .Location {
     h2 {
-        // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 800;
-        font-size: 62px;
-        line-height: 74px;
         color: $dark;
     }
     h3 {
-        // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 800;
-        font-size: 32px;
-        line-height: 36px;
         color: $dark2;
     }
     &__info {
-        // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 32px;
         color: $graydark;
     }
     &__contacts {
-        // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 32px;
         a {
             color: $graydark;
         }
@@ -42,8 +30,6 @@
         // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
-        line-height: 20px;
         text-align: center;
         color: #579D45;
         text-decoration: none;
@@ -57,5 +43,6 @@
         background-image: url('../assets/map.jpg');
         background-size: cover;
         background-position: center;
+        min-height: 300px;
     }
 }
