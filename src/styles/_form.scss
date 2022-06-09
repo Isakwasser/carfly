@@ -5,19 +5,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     &__duration {
-        // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 32px;
         color: $green;
     }
     &__price {
-        // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 800;
-        font-size: 24px;
-        line-height: 36px;
         color: $dark;
     }
     &__mini {
@@ -26,7 +20,9 @@
         }
     }
     &__usersImage {
-        transform: scale(1.3) translateX(-10%);
+        @media (min-width: 991px) {
+            transform: scale(1.3) translateX(-10%);
+        }
     }
     form>div {
         flex-grow: 1;
@@ -35,8 +31,6 @@
         // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
         color: $graydark;
         margin-bottom: 11px;
     }
@@ -46,8 +40,6 @@
         // font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
-        line-height: 20px;
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -76,8 +68,6 @@
                 font-family: 'Proxima Nova';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 16px;
-                line-height: 22px;
                 color: #B5C0D9;
             }
             &::-webkit-datetime-edit {
